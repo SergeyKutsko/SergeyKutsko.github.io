@@ -1,2 +1,2 @@
-# serhii-kutsko.github.io
+# https://sergeykutsko.github.io/
 Personal Web Page
