@@ -107,37 +107,37 @@
           </div>
           <div class="grid-row">
             <div class="grid-row-inner">
-              <div class="resume-section has-no_bottom_border_on_mobile" data-view="resumes#details-height">
-                <div class="resume-details-col" data-role="details-cell" style="height: 300px;">
+              <div class="resume-section">
+                <div class="resume-details-col" data-role="details-cell">
                   <div class="resume-details-item is-top_row">
                     <div class="resume-details-item-inner">
                       <div class="resume-details-title is-blue">Portfolio:</div>
                       <ul class="resume-details-list js-portfolio_section">
                         <li class="resume-details-list-item">
-                          <strong><a href="#">Real</a></strong>
+                          <strong><a href="#employment-real">Real</a></strong>
                           <div class="muted">Ruby, Ruby on Rails, Javascript</div>
                         </li>
                         <li class="resume-details-list-item">
-                          <strong><a href="#">Sephora Digital SEA</a></strong>
+                          <strong><a href="#employment-sephora">Sephora Digital SEA</a></strong>
                           <div class="muted">Ruby, Ruby on Rails, Javacript</div>
                         </li>
                         <li class="resume-details-list-item">
-                          <strong><a href="#">Blue Stout</a></strong>
+                          <strong><a href="#employment-thredup">ThreadUp</a></strong>
+                          <div class="muted">Ruby on Rails, Javascript, Docker</div>
+                        </li>
+                         <li class="resume-details-list-item">
+                          <strong><a href="#employment-connectpal">ConnectPal</a></strong>
                           <div class="muted">Ruby, Ruby on Rails</div>
                         </li>
                         <li class="resume-details-list-item">
-                          <strong><a href="#">ThreadUp</a></strong>
-                          <div class="muted">Ruby on Rails, Javascript, Docker</div>
-                        </li>
-                        <li class="resume-details-list-item">
-                          <strong><a href="#">Clausematch</a></strong>
+                          <strong><a href="#employment-clausematch">Clausematch</a></strong>
                           <div class="muted">Ruby on Rails, Knockout, PostgreSQL</div>
                         </li>
                       </ul>
                     </div>
                   </div>
                 </div>
-                <div class="resume-details-col resume-details-experience has-border_left" data-role="details-cell" style="height: 300px;">
+                <div class="resume-details-col resume-details-experience has-border_left" data-role="details-cell">
                   <div class="resume-details-item is-top_row">
                     <div class="resume-details-item-inner">
                       <div class="resume-details-title is-blue">Experience:</div>
@@ -154,9 +154,13 @@
                     </div>
                   </div>
                 </div>
-                <div class="resume-details-col has-border_left is-beige resume-details-map-wrapper" data-role="details-cell" style="height: 300px;">
-                  <div class="resume-details-item resume-details-map is-top_row"><img class="resume-details-map_image" alt="Kiev, Ukraine" src="./files/staticmap" width="600" height="600"></div>
+                <div class="resume-details-col has-border_left github-details">
                 </div>
+                <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
+                <link rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"/>
+                <script>
+                    new GitHubCalendar(".github-details", "sergeykutsko", { responsive: true });
+                </script>
               </div>
             </div>
           </div>
@@ -201,7 +205,7 @@
                   <div class="resume-section-title">Employment:</div>
                   <div class="resume-section-content">
                     <ul>
-                     <li class="resume-section-content-item" id="employment-98045">
+                     <li class="resume-section-content-item" id="employment-real">
                         <div class="resume-section-content-title">Real, Senior Ruby on Rails Developer
                           <span class="resume-content-range">(2017 - 2018)</span>
                           <div class="muted">
@@ -227,7 +231,7 @@
                           </li>
                         </ul>
                       </li>
-                     <li class="resume-section-content-item" id="employment-98045">
+                     <li class="resume-section-content-item" id="employment-sephora">
                         <div class="resume-section-content-title">Sephora Digital SEA, Senior Ruby on Rails
                           <span class="resume-content-range">(2015 - 2017)</span>
                           <div class="muted">
@@ -259,7 +263,7 @@
                           <div class="js-technologies">Technologies: Ruby on Rails </div>
                         </div>
                       </li>
-                      <li class="resume-section-content-item" id="employment-98044">
+                      <li class="resume-section-content-item" id="employment-thredup">
                         <div class="resume-section-content-title">ThreadUp, Senior Ruby on Rails Developer
                           <span class="resume-content-range">(2014 - 2015)</span>
                           <div class="muted">
@@ -284,7 +288,7 @@
                           </li>
                         </ul>
                       </li>
-                       <li class="resume-section-content-item"  id="employment-98044">
+                       <li class="resume-section-content-item"  id="employment-connectpal">
                         <div class="resume-section-content-title">ConnectPal, Senior Ruby on Rails
                           <span class="resume-content-range">(2014)</span>
                           <div class="muted">
@@ -311,7 +315,7 @@ It was a pleasure working with Sergey and I would not hesitate to recommend him 
                           </li>
                         </ul>
                       </li>
-                      <li class="resume-section-content-item" id="employment-3296">
+                      <li class="resume-section-content-item" id="employment-clausematch">
                         <div class="resume-section-content-title">Clausematch, Full-Stack Ruby On Rails Developer
                         <span class="resume-content-range">(2013 - 2014)</span>
                           <div class="muted">
