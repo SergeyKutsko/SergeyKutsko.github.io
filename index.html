@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0064)#profiles/7835/resume/internal#skills-list -->
 <html class="body-wrapper js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths">
-  <!--<![endif]-->
   <head>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129772318-1"></script>
     <script>
@@ -16,7 +14,7 @@
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <script src="./files/modernizr-7c836b48554818f23a38bea80508b4ea.js"></script><script type="text/javascript">// TODO: Figure out how to override Modernizr test
+    <script type="text/javascript">// TODO: Figure out how to override Modernizr test
       (function () {
         var isIE, noFlexboxClassName;
         isIE = /MSIE/.test(navigator.userAgent) && !/Opera/.test(navigator.userAgent);
@@ -26,11 +24,7 @@
           document.documentElement.className = noFlexboxClassName;
         }
       })();
-    </script><!--[if (lte IE 8)]><script src="https://assets.toptal.io/assets/html5shiv-d51f709c3b197ed9d1a30447321eb4c7.js"></script><script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" debug="false"></script><![endif]--><script type="text/javascript">
-      //<![CDATA[
-      window.gon={};gon.flash={};gon.check_session_url="";gon.shorten_url="";gon.google_api_browser_key="";
-      //]]>
-    </script><!--[if (gte IE 9)|(!IE)]><!--><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js" debug="false"></script><!--[endif]----><script type="text/javascript">window.optimizely = window.optimizely || [];</script>
+    </script>
     <link rel="stylesheet" media="all" href="./files/fonts-0a32a01e2e595d20b891ef2ca2123cd7.css" debug="false">
     <link rel="stylesheet" media="all" href="./files/resumes-88aa8250e75ec4a3fa73fe46d266a435.css" debug="false">
     <style type="text/css">
@@ -38,10 +32,10 @@
         pointer-events: none;
         cursor: default;
       }
-    </style>>
+    </style>
   </head>
   <body class="body resume-external" data-router="anchors" data-view="layout#layout" data-twttr-rendered="true">
-    <div class="resume-fixed-header is-shown" data-role="menu_wrapper" data-view="resumes#fixed-header">
+    <div class="resume-fixed-header is-shown" style="visibility: hidden;" data-role="menu_wrapper" data-view="resumes#fixed-header">
       <div class="layout">
         <div class="grid-row">
           <div class="grid-row-inner">
@@ -56,7 +50,7 @@
               <div class="resume-fixed-header-hire">
                 <div class="resume-fixed-header-info">
                   <div class="resume-fixed-header-title">
-                    <div class="resume-fixed-header-location"><a class="tag is-expert" href="./Sergey Kutsko - Ruby on Rails and JavaScript Developer for Hire.pdf" target="_blank">Get as PDF</a></div>
+                    <div class="resume-fixed-header-location"><a class="tag is-expert" href="./Sergey Kutsko - Ruby on Rails and JavaScript Developer for Hire.pdf" target="_blank">Get&nbsp;as&nbsp;PDF</a></div>
                   </div>
                 </div>
               </div>
@@ -75,7 +69,6 @@
           </div>
           <div class="layout-header-contacts">
             <div class="layout-header-contacts-link"><i class="icon email"></i>Email me: <a class="is-white has-no_decoration" href="mailto:kutsko86@gmail.com?Subject=I Want Hire You Again" target="_top">kutsko86@gmail.com</a></div>
-            <div class="layout-header-contacts-phone"><i class="icon phone"></i>Call me: <a class="is-white has-no_decoration" href="tel:+380935857905">+380935857905</a></div>
           </div>
         </div>
         <div class="layout-content is-white">
@@ -443,7 +436,8 @@ It was a pleasure working with Sergey and I would not hesitate to recommend him 
           </div>
           <div class="layout-header-contacts">
             <div class="layout-header-contacts-link"><a class="is-gray has-no_decoration" href="https://ua.linkedin.com/in/sergeykutsko" rel="noreferrer">LinkedIn profile</a></div>
-            <div class="layout-header-contacts-phone">Call me: <a class="is-gray has-no_decoration" href="tel:+380935857905">+380935857905</a></div>
+
+            <div class="layout-header-contacts-phone"><i class="icon email"></i>Email me: <a href="mailto:kutsko86@gmail.com?Subject=I Want Hire You Again" target="_top">kutsko86@gmail.com</a></div>
           </div>
         </div>
       </div>
@@ -453,8 +447,28 @@ It was a pleasure working with Sergey and I would not hesitate to recommend him 
         </div>
       </div>
     </div>
-    <script src="./files/public-deee2d916e643474263063372ddf90bd.js" debug="false"></script>
     <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/5174183.js"></script>
+    <script>
+      (function () {
+        var menu = document.querySelector('.resume-fixed-header');
+        //var menuPosition = menu.getBoundingClientRect();
+        //var placeholder = document.createElement('div');
+        //placeholder.style.width = '100%';
+        //placeholder.style.height = menuPosition.height + 'px';
+        var isAdded = false;
+        window.addEventListener('scroll', function() {
+          if (window.pageYOffset >= 150 && !isAdded) {
+           // menu.parentNode.insertBefore(placeholder, menu);
+            menu.style.visibility = 'visible';
+            isAdded = true;
+          } else if (window.pageYOffset < 150) {
+            //menu.parentNode.removeChild(placeholder);
+            menu.style.visibility = 'hidden';
+            isAdded = false;
+          }
+        });
+      })();
+    </script>
   </body>
   <div class="layout_layer-hover_cover" style="display: none;"></div>
 </html>
