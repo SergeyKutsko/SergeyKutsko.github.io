@@ -14,17 +14,6 @@
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <script type="text/javascript">// TODO: Figure out how to override Modernizr test
-      (function () {
-        var isIE, noFlexboxClassName;
-        isIE = /MSIE/.test(navigator.userAgent) && !/Opera/.test(navigator.userAgent);
-        isIE11 = !!window.MSInputMethodContext
-        if (window.Modernizr && (window.Modernizr.flexbox && (isIE || isIE11))) {
-          noFlexboxClassName = document.documentElement.className.replace('flexbox', 'no-flexbox');
-          document.documentElement.className = noFlexboxClassName;
-        }
-      })();
-    </script>
     <link rel="stylesheet" media="all" href="./files/fonts-0a32a01e2e595d20b891ef2ca2123cd7.css" debug="false">
     <link rel="stylesheet" media="all" href="./files/resumes-88aa8250e75ec4a3fa73fe46d266a435.css" debug="false">
     <style type="text/css">
